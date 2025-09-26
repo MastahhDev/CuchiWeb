@@ -3,6 +3,56 @@
 {% block title %}G.V Cuchillos{% endblock %}
 {% block content %}
 
+<main class="contact_main">
+    <div class="contact_div1">
+        <h2 class="contacto">Contacto</h2>
+        <h5 class="contacto_wsig">WhatsApp</h5>
+        <button class="contact_icon" onclick="window.open('https://www.google.com')">
+            <i class="fa-brands fa-whatsapp"></i> 
+        </button>
+
+        <h5 class="contacto_wsig">Instagram</h5>
+        <button class="contact_icon" onclick="window.open('https://www.instagram.com/g.vianini_official')">
+            <i class="fa-brands fa-instagram"></i> 
+        </button>
+        <h5 style="padding-top: 30px; color: #7D1700;">Si quiere que nos comuniquemos nosotros rellene el siguiente formulario:</h5>
+    </div>
+
+    <div class="contact_div2">
+        <h2 class="contacto">Horarios de atención</h2>
+        <h5 style="color: #E88B61;">Lunes a viernes: 9hs a 23hs</h5>
+        <h5 style="color: #E88B61;">Sabado y domingo: 9hs a 15hs</h5>
+    </div>
+
+    <div class="contact_div3">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Franco Maximo Sanchez">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="11 1234 5678">
+        </div>
+        <div class="form-floating">
+             <label for="exampleFormControlInput1" class="form-label">Tipo de consulta</label>
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected>Seleccionar</option>
+                <option value="1">Producto</option>
+                <option value="2">Envios</option>
+                <option value="3">Retiros</option>
+                <option value="4">Otro</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </div>
+</main>
 
 
 {% endblock %}

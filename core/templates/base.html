@@ -2,7 +2,7 @@
 {% load socialaccount %}
 
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="white">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}G.V Cuchillos{% endblock %}</title>
@@ -28,7 +28,6 @@
 
     <ul>
       {% if user.is_authenticated %}
-        <li class="saludo">Hola, {{ user.first_name|default:user.username }}</li>
         <li><a href="{% url 'account_logout' %}" class="logout-link">Salir</a></li>
       {% else %}
         <li>
